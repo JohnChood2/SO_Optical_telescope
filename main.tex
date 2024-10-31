@@ -1,0 +1,197 @@
+\documentclass{article}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% Page layout settings
+\geometry{a4paper, margin=1in}
+
+% Header/Footer settings
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{PARQUE ASTRONÓMICO ATACAMA}
+\lhead{1-meter Telescope Proposal}
+\cfoot{\thepage}
+
+\title{Project Proposal: 1-meter Class Optical Telescope\\
+PARQUE ASTRONÓMICO ATACAMA}
+\author{Dr. John C. Hood II}
+\date{October 1, 2024}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Executive Summary}
+This proposal outlines the establishment of a 1-meter class optical telescope at the PARQUE ASTRONÓMICO ATACAMA in Chile. The project addresses a critical gap in the astronomy community's observation strategy: the lack of high-cadence optical observations of AGN and transients in the southern hemisphere. This facility will provide valuable data for both internal analysis and public access through an open database.
+
+\section{Project Overview}
+
+\subsection{Scientific Motivation}
+Recent advances in millimeter-wave astronomy have revealed a significant need for complementary optical observations of AGN and transients in the southern hemisphere. High-cadence optical monitoring of these sources is essential for:
+\begin{itemize}
+    \item Multi-wavelength correlation studies
+    \item Rapid follow-up of transient events
+    \item Long-term variability monitoring
+    \item Public data access for the broader astronomical community
+\end{itemize}
+
+\subsection{Site Selection}
+The PARQUE ASTRONÓMICO ATACAMA presents ideal conditions for astronomical observations:
+\begin{itemize}
+    \item Exceptional atmospheric transparency
+    \item Minimal light pollution
+    \item High altitude benefits
+    \item Existing infrastructure accessibility
+    \item Security through proximity to other facilities (CLASS, APEX, ALMA)
+\end{itemize}
+
+\section{Technical Specifications}
+
+\subsection{Primary Observatory Components}
+
+\subsubsection{Telescope System: Planewave CDK1000}
+\begin{itemize}
+    \item Aperture: 1000mm (1 meter)
+    \item Focal Length: 6,800mm (f/6.8)
+    \item Mount: L-500 Direct Drive
+    \item Pointing Accuracy: Sub-arcsecond with TPoint model
+    \item Maximum Slew Speed: 20 degrees/second
+\end{itemize}
+
+\subsubsection{Imaging System: ZWO ASI183MM}
+\begin{itemize}
+    \item Sensor: Sony IMX183CLK-J/CQJ-J CMOS
+    \item Resolution: 20.18 Megapixels (5496 x 3672)
+    \item Pixel Size: 2.4 µm
+    \item Cooling: 40°C below ambient
+    \item QE Peak: 84% at 550nm
+\end{itemize}
+
+\subsection{Infrastructure Requirements}
+
+\subsubsection{Power Systems}
+\begin{itemize}
+    \item Solar Array: REC Alpha Pure Series (3.52kW total)
+    \item Primary Battery: Tesla Powerwall+ (13.5kWh)
+    \item Backup Battery: LG RESU Prime 16H (16kWh)
+    \item Controller: Victron SmartSolar MPPT 250/100
+\end{itemize}
+
+\subsubsection{Housing and Protection}
+\begin{itemize}
+    \item Modified shipping container ($\sim$\$5,000)
+    \item Roof-mounted solar panels
+    \item Internal battery storage
+    \item Climate control system
+\end{itemize}
+
+\section{Power Distribution and Operation}
+
+\subsection{Daily Power Usage}
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{|X|c|X|}
+\hline
+\textbf{Time} & \textbf{Power Draw} & \textbf{Operations} \\
+\hline
+06:00-08:00 & 400W & System startup, calibration \\
+08:00-16:00 & 600W & Maintenance, standby \\
+16:00-18:00 & 800W & Evening preparation \\
+18:00-22:00 & 1200W & Prime observation \\
+22:00-02:00 & 900W & Standard observation \\
+02:00-06:00 & 800W & Late observation \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection{Emergency Power Mode}
+\begin{itemize}
+    \item Essential systems: 400W
+    \item Security systems: 100W
+    \item Computing/Control: 200W
+    \item Communications: 50W
+    \item Total Emergency Draw: 750W
+\end{itemize}
+
+\section{Maintenance Schedule}
+
+\subsection{Regular Maintenance}
+\begin{itemize}
+    \item Daily: System checks, data backup
+    \item Weekly: Solar system inspection, dust monitoring
+    \item Monthly: Detailed cleaning, diagnostics
+    \item Quarterly: Deep cleaning, system analysis
+    \item Annual: Comprehensive review, certification
+\end{itemize}
+
+\subsection{Environmental Management}
+\begin{itemize}
+    \item Dust mitigation protocols
+    \item Temperature monitoring
+    \item Weather protection systems
+    \item Emergency shutdown procedures
+\end{itemize}
+
+\section{Data Management and Access}
+
+\subsection{Network Infrastructure}
+\begin{itemize}
+    \item Fiber optic connection
+    \item High-speed data transfer
+    \item Remote operation capability
+    \item Public database access
+\end{itemize}
+
+\subsection{Data Products}
+\begin{itemize}
+    \item Raw observational data
+    \item Processed images
+    \item Calibration files
+    \item Public access portal
+\end{itemize}
+
+\section{Budget and Timeline}
+
+\subsection{Cost Breakdown}
+\begin{itemize}
+    \item Telescope system
+    \item Infrastructure development
+    \item Solar power system
+    \item Security measures
+    \item Transportation and installation
+    \item Initial operational costs
+\end{itemize}
+
+\subsection{Implementation Timeline}
+\begin{itemize}
+    \item Planning and approval: 3 months
+    \item Equipment procurement: 6 months
+    \item Site preparation: 4 months
+    \item Installation and testing: 3 months
+    \item Commissioning: 2 months
+\end{itemize}
+
+\section{Conclusion}
+This project will fill a critical gap in southern hemisphere astronomical observations by providing high-cadence optical monitoring capabilities. The facility's location at PARQUE ASTRONÓMICO ATACAMA, combined with its automated operations and public data access, will make it a valuable resource for the global astronomical community.
+
+\appendix
+\section{Technical Specifications}
+[Detailed specifications for all equipment]
+
+\section{Site Analysis}
+[Detailed environmental and astronomical conditions]
+
+\section{Emergency Procedures}
+[Complete emergency protocols and contacts]
+
+\end{document}
